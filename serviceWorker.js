@@ -2,9 +2,9 @@ const staticDev = "namavali_game"
 const service_worker_version = "v2.1"
 const assets = [
   "/",
-  "/index.html",
-  "/style.css",
-  "/script.js"
+  "index.html",
+  "style.css",
+  "script.js"
 ]
 
 self.addEventListener("install", installEvent => {
