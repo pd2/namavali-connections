@@ -14,12 +14,12 @@
     </script>
     <title>Namavali Game</title>
     <link rel="icon" href="https://cdn.glitch.global/39d11baf-ed36-4e7a-b05a-22fe0ef30bd3/Namavali_game_icon.png" type="image/x-icon">
-    <link rel="manifest" href="/manifest.json" >
+    <link rel="manifest" href="manifest.json" >
     <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" >
+    <link rel="stylesheet" href="style.css" >
     
     <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <h1>
@@ -65,7 +65,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function() {
           navigator.serviceWorker
-            .register("/serviceWorker.js")
+            .register("serviceWorker.js")
             .then(res => console.log("service worker registered"))
             .catch(err => console.log("service worker not registered", err))
         })
