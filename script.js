@@ -613,7 +613,7 @@ function ShareIt() {
     results += "\n";
   });
   
-  let linkURL = "https://namavali-game.glitch.me";
+  let linkURL = "https://pd2.github.io/namavali-connections/";
   
   copyText = `#Namavali game\n${results} at ${linkURL}`;
   
