@@ -72,14 +72,14 @@ let list_hint_class = ["hinted", "hint_group1", "hint_group2", "hint_group3", "h
 
 let name_list = [];
 
-let lastPlayedTs, is_english;
+let nama_lastPlayedTs, is_english;
 
 
 function createGame() {
 
   var today = new Date();
   
-  if ( Na(new Date(lastPlayedTs), today) < 1) {
+  if ( Na(new Date(nama_lastPlayedTs), today) < 1) {
     alert("Play a new puzzle tomorrow!")
     return;
   }
@@ -579,7 +579,7 @@ function GameOver() {
     item.classList.remove("hint_group4");
   });*/
 
-  lastPlayedTs = new Date();
+  nama_lastPlayedTs = new Date();
 
   save_history();
   
@@ -655,11 +655,11 @@ function get_history() {
   const noItemsFound_lastPlayedTs = 0;
   const lpts = localStorage.getItem('lpts') || noItemsFound_lastPlayedTs;
   
-  lastPlayedTs = JSON.parse(lpts);
+  nama_lastPlayedTs = JSON.parse(lpts);
 }
 
 function save_history() {
-  const lpts = JSON.stringify(lastPlayedTs);
+  const lpts = JSON.stringify(nama_lastPlayedTs);
   localStorage.setItem('lpts', lpts);
 }
 
