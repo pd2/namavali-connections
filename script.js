@@ -653,14 +653,14 @@ function Na(e, a) {
 
 function get_history() {
   const noItemsFound_lastPlayedTs = 0;
-  const lpts = localStorage.getItem('lpts') || noItemsFound_lastPlayedTs;
+  const lpts = localStorage.getItem('nama_lpts') || noItemsFound_lastPlayedTs;
   
   nama_lastPlayedTs = JSON.parse(lpts);
 }
 
 function save_history() {
   const lpts = JSON.stringify(nama_lastPlayedTs);
-  localStorage.setItem('lpts', lpts);
+  localStorage.setItem('nama_lpts', lpts);
 }
 
 get_history();
