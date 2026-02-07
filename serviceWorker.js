@@ -1,5 +1,5 @@
 const staticDev = "namavali_game"
-const service_worker_version = "v2.1"
+const service_worker_version = "v2.11"
 const assets = [
   "/",
   "index.html",
